@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Troy Chen · Links</title>
+  <style>
+    :root { color-scheme: dark; font-family: "DM Sans", system-ui, sans-serif; background: #11151b; color: #f2f3ee; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { width: min(100% - 2rem, 30rem); margin: clamp(1rem, 8vh, 5rem) auto 3rem; }
+    .cover { position: relative; isolation: isolate; overflow: hidden; height: 9rem; border-radius: 1.5rem; background: #bce7ac; }
+    .cover::before { content: ""; position: absolute; inset: -150% -45%; transform: rotate(-22deg); background: repeating-radial-gradient(ellipse at 62% 30%, transparent 0 9px, #284f43 10px 11px, transparent 12px 15px); }
+    header { position: relative; padding: 0 1rem; }
+    .avatar { display: grid; place-items: center; margin-top: -2.2rem; width: 4.4rem; height: 4.4rem; border: 5px solid #11151b; border-radius: 50%; background: #e5e9d6; color: #19332b; font: italic bold 1.6rem Georgia, serif; }
+    h1 { margin: 1rem 0 1.6rem; font-size: clamp(2.5rem, 8vw, 3.6rem); letter-spacing: -.06em; line-height: 1; }
+    nav { display: grid; gap: .7rem; }
+    a { display: flex; align-items: center; gap: 1rem; min-height: 5rem; padding: .9rem 1.1rem; border: 1px solid #394147; border-radius: 1.1rem; background: #1c2229; color: inherit; text-decoration: none; font-weight: 650; }
+    a:hover, a:focus-visible { background: #273039; border-color: #bce7ac; }
+    a:focus-visible { outline: 3px solid #bce7ac; outline-offset: 3px; }
+    .icon { flex: 0 0 2.8rem; height: 2.8rem; border-radius: .8rem; display: grid; place-items: center; color: #17211e; font: 700 1.4rem ui-monospace, monospace; }
+    .music { background: #bce7ac; } .code { background: #c1c7fb; } .photo { background: #f5c6ac; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="cover" aria-hidden="true"></div>
+    <header><div class="avatar" aria-hidden="true">TC</div><h1>Troy Chen</h1></header>
+    <!-- Replace each platform homepage below with your own profile URL. -->
+    <nav aria-label="Social links">
+      <a href="https://open.spotify.com/"><span class="icon music" aria-hidden="true">♫</span>Spotify</a>
+      <a href="https://github.com/"><span class="icon code" aria-hidden="true">&lt;/&gt;</span>GitHub</a>
+      <a href="https://www.instagram.com/"><span class="icon photo" aria-hidden="true">◎</span>Instagram</a>
+    </nav>
+  </main>
+</body>
+</html>
